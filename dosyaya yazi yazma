@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+
+{
+	FILE *dosya;
+	char isim[]="Irmak";
+	dosya=fopen("irmik.txt","w");
+	fprintf(dosya,"Bu dosya %s nin dosyasidir",isim);
+	fclose(dosya);
+
+	return 0;
+}
