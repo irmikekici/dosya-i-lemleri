@@ -1,0 +1,122 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   
+/*
+
+   FILE *dosya;
+   char karakter;
+
+   dosya=fopen("bilgi.txt","r");
+   if(dosya==NULL)
+   {
+       printf("Dosya olusturulamdi");   //KARAKTER KARAKTER OKUR
+   }
+   else
+   {
+   	   do
+   	   {
+   	   	    karakter=getc(dosya);
+            if(karakter !=EOF)
+   	   	    {
+   	   	    	putchar(karakter);
+			}
+
+	   }while(karakter !=EOF);
+   }
+   fclose(dosya);
+   printf("\nBasarili"); 
+   */
+  /* 
+   FILE *dosya;
+   char satir[100],*karakter;
+   dosya=fopen("irmak.txt","r");
+   if(dosya==NULL)
+   {
+   	printf("Dosya olusturulamadi");
+   }
+   else
+   {
+   	do
+   	{
+   		   	karakter=fgets(satir,100,dosya); //SATIR SATIR OKUMA VE KONSOLA BASTIRMA
+   		   	if(karakter !=NULL)
+   		   	{
+   		   		printf("%s",satir);
+				  }
+
+	   }while(karakter !=NULL);
+	fclose(dosya);
+   printf("\nBasarili");  */
+   /* FILE*dosya;
+    int N,i,karakter;
+    dosya=fopen("tekcift.txt","w");
+    
+    if(dosya==NULL)
+    {
+    	printf("Dosya olusturulamadi");
+	}
+	else
+	{
+		printf("Lutfen bir sayi giriniz\n");
+		scanf("%d",&N);
+		for(i=1;i<=N;i++)
+		{
+			if(i%2 ==0)
+			{
+				fprintf(dosya,"%d = cift\n",i); //TEK VE CIFT SAYILARI DOSYAYA YAZMA
+			}
+			else
+			{
+				fprintf(dosya,"%d = tek\n",i);
+			}
+		}
+	}
+    
+    
+    
+    
+    fclose(dosya);
+    printf("Bilgiler dosyaya yazildi\n");
+    printf("Dosyalar okunuyor\n");
+    dosya=fopen("tekcift.txt","r");
+    do
+    {
+    	karakter=getc(dosya);
+    	if(karakter != EOF)
+    	{
+    		putchar(karakter);
+		}
+	}while(karakter !=EOF);
+	fclose(dosya);
+	*/
+    /* FILE *dosya;
+    char cumle[10];
+    int i;
+    dosya=fopen("bilgi.txt","a");
+    
+    if(dosya==NULL)
+    {
+    	printf("Dosya olusturulamadi");
+	}
+	else
+	{
+		printf("Lutfen bir cumle giriniz\n"); //KARAKTER KARAKTER BILGI EKLEME
+		gets(cumle);
+		
+		for(i=0;cumle[i];i++)
+		{
+			putc(cumle[i],dosya);
+		}
+	}
+    putc('\n',dosya);
+    fclose(dosya);
+    printf("Bilgiler dosyaya yazildi\n"); */
+
+    
+
+
+    return 0;
+}
