@@ -4,7 +4,7 @@
 int main()
 {
     //fgetc(); -->Dosyadan tek bir karakter okur.
-    //fscanf(); -->Dosyadan biÃ§imlendirilmiÅŸ karakter dizisi okur
+    //fscanf(); -->Dosyadan bicimlendirilmis karakter dizisi okur
     /*
         FILE *dosya;
         char karakter;
