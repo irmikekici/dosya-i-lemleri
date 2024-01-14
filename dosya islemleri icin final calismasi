@@ -1,0 +1,18 @@
+/* r   ReadOnly         Sadece okuma icin.Dosyanin acilabilmesi icin onceden olusturulmasi gerekir.
+   w   WriteOnly        Yalnizca yazma icin.Dosya kayitli olsun veya olmasin yeniden olusturulur.
+   a   append           Ekleme.Kayitli bir dosyanin sonuna veri eklemek icin kullanilir.
+   r+  Okuma ve Yazma   Bu modda acilmis olan bir dosyanin daha onceden var olmasi gerekir.
+   w+  Okuma ve Yazma   Bu modda acilmis olan bir dosya var olsun veya olmasin yeniden olusturulur.
+   a+  Okuma ve Yazma   Kayitli bir dosyanin sonuna veri eklemek icin acilir. 
+   
+   fgetc()   Dosyadan bir karakter veri okur.
+   fgets()   Dosyadan bir karakter dizisi okur. 
+   fread()   Dosyaya bir kayit dizi veya karakteri ikli olarak okur.
+   fscanf()  Dosyadaki verileri bicimlendirerek okur. 
+   feof()    Dosyanin sonunu belirler. */
+
+FILE *dosya;
+while(!feof(dosya))
+{
+  fgetc(dosya);<---Dosyanin sonuna gelinmedigi surece dosyadan karakter okur.
+}
