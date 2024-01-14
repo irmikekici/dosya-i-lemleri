@@ -39,13 +39,7 @@ int main()
 		fclose(d1);
 		fclose(d2);
 		fclose(d3);
-
-
-	}
-	
-		
-	
+	}	
 	
 	return 0;
-	
 }
